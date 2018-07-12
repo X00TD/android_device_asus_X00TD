@@ -134,7 +134,6 @@ lib/libjni_chromaflash.so
 lib/libjni_dualcamera.so
 lib/libjni_filtergenerator.so
 lib/libjni_hazebuster.so
-lib/libjni_imageutil.so
 lib/libjni_makeupV2.so
 lib/libjni_optizoom.so
 lib/libjni_panorama.so
