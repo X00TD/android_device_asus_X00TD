@@ -33,8 +33,6 @@ def AddTrustZoneAssertion(info, input_zip):
     if len(versions) and '*' not in versions:
       cmd = 'assert(X00TD.verify_trustzone(' + ','.join(['"%s"' % tz for tz in versions]) + ') == "1");'
       info.script.AppendExtra(cmd)
-      info.script.AppendExtra('ifelse(is_mounted("/vendor"), unmount("/vendor"));');
-      info.script.Mount("/vendor");
   return
 
 def FullOTA_InstallEnd(info):
