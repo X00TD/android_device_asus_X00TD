@@ -195,6 +195,7 @@ persist.asus.led.on=1
 #Huaqin add for ZQL1650-1008 by banxiaokun at 2018/4/27  end
 
 # Vendor starts
+ro.sf.lcd_density=480
 video.disable.ubwc=1
 ro.hardware.nfc_nci=nqx.default
 ro.additionalbutton.operation=0
