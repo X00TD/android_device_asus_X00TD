@@ -2794,10 +2794,10 @@ vendor/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0_vendor.so
 vendor/radio/qcril_database/qcril.db
 
 # Radio - IMS
-etc/permissions/com.qualcomm.qti.imscmservice.xml
-etc/permissions/com.qualcomm.qti.imscmservice_1_1.xml
--framework/com.qualcomm.qti.imscmservice@1.0-java.jar
--framework/com.qualcomm.qti.imscmservice@1.1-java.jar
+etc/permissions/com.qualcomm.qti.imscmservice.xml:vendor/etc/permissions/com.qualcomm.qti.imscmservice.xml
+etc/permissions/com.qualcomm.qti.imscmservice_1_1.xml:vendor/etc/permissions/com.qualcomm.qti.imscmservice_1_1.xml
+-framework/com.qualcomm.qti.imscmservice@1.0-java.jar:vendor/framework/com.qualcomm.qti.imscmservice@1.0-java.jar
+-framework/com.qualcomm.qti.imscmservice@1.1-java.jar:vendor/framework/com.qualcomm.qti.imscmservice@1.1-java.jar
 vendor/lib64/lib-uceservice.so
 vendor/lib/lib-uceservice.so
 vendor/bin/imsqmidaemon
