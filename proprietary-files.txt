@@ -2798,9 +2798,6 @@ etc/permissions/com.qualcomm.qti.imscmservice.xml
 etc/permissions/com.qualcomm.qti.imscmservice_1_1.xml
 -framework/com.qualcomm.qti.imscmservice@1.0-java.jar
 -framework/com.qualcomm.qti.imscmservice@1.1-java.jar
-lib64/lib-imsvtutils.so
-lib64/lib-imsvideocodec.so
-lib64/lib-imsvt.so
 vendor/lib64/lib-uceservice.so
 vendor/lib/lib-uceservice.so
 vendor/bin/imsqmidaemon
@@ -2815,10 +2812,6 @@ vendor/lib64/lib-dplmedia.so
 vendor/lib/lib-dplmedia.so
 vendor/lib64/lib-imsrcs-v2.so
 vendor/lib/lib-imsrcs-v2.so
-lib64/lib-imscamera.so
-lib64/libimscamera_jni.so
-lib64/lib-imsvtextutils.so
-lib64/libimsmedia_jni.so
 vendor/lib64/lib-imsdpl.so
 vendor/lib/lib-imsdpl.so
 vendor/lib64/lib-imsqimf.so
