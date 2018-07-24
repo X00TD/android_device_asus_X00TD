@@ -15,9 +15,8 @@
 # limitations under the License.
 #
 
-RAW_ID=`cat /sys/devices/soc0/raw_id`
-
-if [ $RAW_ID == 204 ]; then
+if ! grep nfc /persist/manifest.xml
+	then
     # Remove NFC
     rm -rf /system/app/*Nfc*
     rm -rf /system/etc/permissions/*nfc*
