@@ -2191,6 +2191,7 @@ lib64/libQTEEConnector_system.so
 lib64/vendor.qti.hardware.qteeconnector@1.0.so
 vendor/bin/hw/android.hardware.drm@1.0-service.widevine
 vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service
+vendor/bin/e_loop
 vendor/bin/qseecomd
 vendor/etc/init/android.hardware.drm@1.0-service.widevine.rc
 vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc
@@ -2613,6 +2614,7 @@ lib64/vendor.qti.hardware.iop@1.0.so
 lib64/vendor.qti.hardware.iop@2.0.so
 -vendor/app/Perfdump/Perfdump.apk
 vendor/bin/energy-awareness
+vendor/bin/gamed
 vendor/bin/msm_irqbalance
 vendor/bin/hw/vendor.qti.hardware.perf@1.0-service
 vendor/etc/init/vendor.qti.hardware.perf@1.0-service.rc
@@ -2821,22 +2823,6 @@ vendor/bin/imsdatadaemon
 vendor/bin/imsqmidaemon
 vendor/bin/imsrcsd
 vendor/framework/qti-vzw-ims-internal.jar
-vendor/lib64/com.qualcomm.qti.imscmservice@1.0_vendor.so
-vendor/lib64/com.qualcomm.qti.imscmservice@1.1_vendor.so
-vendor/lib64/lib-dplmedia.so
-vendor/lib64/lib-imscmservice.so
-vendor/lib64/lib-imsdpl.so
-vendor/lib64/lib-imsqimf.so
-vendor/lib64/lib-imsrcs-v2.so
-vendor/lib64/lib-imsxml.so
-vendor/lib64/lib-rtpcommon.so
-vendor/lib64/lib-rtpcore.so
-vendor/lib64/lib-rtpdaemoninterface.so
-vendor/lib64/lib-rtpsl.so
-vendor/lib64/lib-uceservice.so
-vendor/lib64/vendor.qti.hardware.radio.ims@1.0_vendor.so
-vendor/lib64/vendor.qti.imsrtpservice@1.0-service-Impl.so
-vendor/lib64/vendor.qti.imsrtpservice@1.0_vendor.so
 vendor/lib/com.qualcomm.qti.imscmservice@1.0_vendor.so
 vendor/lib/com.qualcomm.qti.imscmservice@1.1_vendor.so
 vendor/lib/lib-dplmedia.so
@@ -2849,10 +2835,28 @@ vendor/lib/lib-rtpcommon.so
 vendor/lib/lib-rtpcore.so
 vendor/lib/lib-rtpdaemoninterface.so
 vendor/lib/lib-rtpsl.so
+vendor/lib/lib-siputility.so
 vendor/lib/lib-uceservice.so
 vendor/lib/vendor.qti.hardware.radio.ims@1.0_vendor.so
 vendor/lib/vendor.qti.imsrtpservice@1.0-service-Impl.so
 vendor/lib/vendor.qti.imsrtpservice@1.0_vendor.so
+vendor/lib64/com.qualcomm.qti.imscmservice@1.0_vendor.so
+vendor/lib64/com.qualcomm.qti.imscmservice@1.1_vendor.so
+vendor/lib64/lib-dplmedia.so
+vendor/lib64/lib-imscmservice.so
+vendor/lib64/lib-imsdpl.so
+vendor/lib64/lib-imsqimf.so
+vendor/lib64/lib-imsrcs-v2.so
+vendor/lib64/lib-imsxml.so
+vendor/lib64/lib-rtpcommon.so
+vendor/lib64/lib-rtpcore.so
+vendor/lib64/lib-rtpdaemoninterface.so
+vendor/lib64/lib-rtpsl.so
+vendor/lib64/lib-siputility.so
+vendor/lib64/lib-uceservice.so
+vendor/lib64/vendor.qti.hardware.radio.ims@1.0_vendor.so
+vendor/lib64/vendor.qti.imsrtpservice@1.0-service-Impl.so
+vendor/lib64/vendor.qti.imsrtpservice@1.0_vendor.so
 
 # Sensors
 lib64/libsensor1.so
@@ -2988,6 +2992,8 @@ lib64/libvr_amb_engine.so
 lib64/libvraudio.so
 lib64/libvr_object_engine.so
 lib64/libvr_sam_wrapper.so
+vendor/lib/libvraudio_client.so
+vendor/lib64/libvraudio_client.so
 
 # WideWine
 vendor/firmware/widevine.b00
@@ -2999,9 +3005,11 @@ vendor/firmware/widevine.b05
 vendor/firmware/widevine.b06
 vendor/firmware/widevine.b07
 vendor/firmware/widevine.mdt
+vendor/lib/liboemcrypto.so
 vendor/lib/libwvhidl.so
 vendor/lib/mediadrm/libwvdrmengine.so
 vendor/lib64/mediadrm/libwvdrmengine.so
+vendor/lib64/libwvhidl.so
 
 # WiFi
 vendor/bin/cnss_diag
@@ -3085,56 +3093,23 @@ vendor/lib64/com.qualcomm.qti.wifidisplayhal@1.0_vendor.so
 vendor/lib64/com.qualcomm.qti.wifidisplayhal@1.0-impl.so
 vendor/lib64/com.qualcomm.qti.wifidisplayhal@1.0-halimpl.so
 
-# Unclassified
+# mmi
 lib/libmmi.so
 lib64/libmmi.so
 -vendor/app/Qmmi/Qmmi.apk
 -vendor/app/SecProtect/SecProtect.apk
-vendor/bin/athdiag
-vendor/bin/e_loop
-vendor/bin/gamed
-vendor/bin/getqxdmlog
-vendor/bin/gettcpdump
-vendor/bin/icm
-vendor/bin/KmInstallKeybox
-vendor/bin/LKCore
 vendor/bin/mmid
-vendor/bin/myftm
 vendor/bin/nvram_btwifi
 vendor/bin/nvram_country
-vendor/bin/PktRspTest
-vendor/bin/qjpeg-dma-test
-vendor/bin/resize2fs
-vendor/bin/seemp_healthd
-vendor/bin/SoterProvisioningTool
-vendor/bin/stopqxdmlog
-vendor/bin/StoreKeybox
-vendor/bin/subsystem_ramdump
-vendor/bin/tbaseLoader
-vendor/bin/test_diag
-vendor/bin/toolbox_vendor
-vendor/bin/vendor_cmd_tool
-vendor/bin/wdsdaemon
-vendor/bin/WifiLogger_app
 vendor/etc/ftm_test_config
+vendor/lib/libmmi_jni.so
+vendor/lib64/libmmi_jni.so
+
+# Unclassified
 vendor/firmware/aw87339_kspk.bin
 vendor/firmware/mono.cnt
 vendor/firmware/startup_fw_update.img
-vendor/lib/lib-siputility.so
-vendor/lib/libcsm_data.so
-vendor/lib/libdiagjni.so
-vendor/lib/libfastcrc.so
-vendor/lib/libmmi_jni.so
-vendor/lib/liboemcrypto.so
 vendor/lib/libstreamparser.so
 vendor/lib/libUBWC.so
-vendor/lib/libvraudio_client.so
-vendor/lib64/lib-siputility.so
-vendor/lib64/libcsm_data.so
-vendor/lib64/libdiagjni.so
-vendor/lib64/libfastcrc.so
-vendor/lib64/libmmi_jni.so
 vendor/lib64/libstreamparser.so
 vendor/lib64/libUBWC.so
-vendor/lib64/libvraudio_client.so
-vendor/lib64/libwvhidl.so
