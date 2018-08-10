@@ -51,10 +51,6 @@ TARGET_2ND_CPU_VARIANT := cortex-a53
 
 TARGET_USES_64_BIT_BINDER := true
 
-# Assert
-TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
-TARGET_OTA_ASSERT_DEVICE := ASUS_X00TD,X00TD
-
 # Kernel
 BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200,n8 androidboot.console=ttyMSM0 earlycon=msm_serial_dm,0xc170000 androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x37 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 sched_enable_hmp=1 sched_enable_power_aware=1 service_locator.enable=1 swiotlb=1 androidboot.configfs=true androidboot.usbcontroller=a800000.dwc3
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
@@ -204,12 +200,6 @@ TARGET_PROVIDES_LIBLIGHT := true
 # Media
 TARGET_USES_MEDIA_EXTENSIONS := true
 
-# NFC
-BOARD_NFC_CHIPSET := pn553
-BOARD_NFC_HAL_SUFFIX := $(TARGET_BOARD_PLATFORM)
-NXP_CHIP_TYPE := 4
-TARGET_USES_NQ_NFC := true
-
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 262144
 BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864
@@ -245,10 +235,6 @@ BOARD_USES_QCOM_HARDWARE := true
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/recovery.fstab
 BOARD_HAS_LARGE_FILESYSTEM := true
-
-# Releasetools
-TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_X00TD
-TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 
 # RIL
 TARGET_RIL_VARIANT := caf
