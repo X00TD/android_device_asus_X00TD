@@ -309,7 +309,6 @@ PRODUCT_PACKAGES += \
     libOmxSwVencHevc \
     libOmxVdec \
     libOmxVenc \
-    libstagefright_wfd \
     libstagefrighthw
 
 # Overlays
