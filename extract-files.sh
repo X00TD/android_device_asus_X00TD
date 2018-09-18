@@ -76,4 +76,7 @@ IMSCMSERVICE_1_1="$BLOB_ROOT"/vendor/etc/permissions/com.qualcomm.qti.imscmservi
 sed -i "s|/system/framework/|/vendor/framework/|g" "$IMSCMSERVICE"
 sed -i "s|/system/framework/|/vendor/framework/|g" "$IMSCMSERVICE_1_1"
 
+patchelf --set-soname libicuuc-v27.so $BLOB_ROOT/vendor/lib/libicuuc-v27.so
+patchelf --set-soname libminikin-v27.so $BLOB_ROOT/vendor/lib/libminikin-v27.so
+
 . "$MY_DIR"/setup-makefiles.sh

@@ -3072,3 +3072,9 @@ vendor/lib/libstreamparser.so
 vendor/lib/libUBWC.so
 vendor/lib64/libstreamparser.so
 vendor/lib64/libUBWC.so
+
+# Pie missing symbols
+lib/libicuuc.so:vendor/lib/libicuuc-v27.so
+lib/libminikin.so:vendor/lib/libminikin-v27.so
+lib/libskia.so:vendor/lib/libskia.so
+lib64/libsoftkeymaster.so:vendor/lib64/libsoftkeymaster.so
