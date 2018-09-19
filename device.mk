@@ -424,11 +424,11 @@ PRODUCT_BOOT_JARS += \
     telephony-ext
 
 # Tetheroffload
-#PRODUCT_PACKAGES += \
-#    ipacm \
-#    IPACM_cfg.xml \
-#    libipanat \
-#    liboffloadhal
+PRODUCT_PACKAGES += \
+    ipacm \
+    IPACM_cfg.xml \
+    libipanat \
+    liboffloadhal
 
 # TextClassifier smart selection model files
 PRODUCT_PACKAGES += \
