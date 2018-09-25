@@ -162,6 +162,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
 	DEVICE_PROVISIONED=1 \
 	persist.data.iwlan.enable=true \
+	persist.dbg.volte_avail_ovr=1 \
 	persist.radio.atfwd.start=true \
 	persist.radio.multisim.config=dsds \
 	persist.radio.plmn_disable_data=true \
