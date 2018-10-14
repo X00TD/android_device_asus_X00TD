@@ -3070,3 +3070,25 @@ lib/libicuuc.so:vendor/lib/libicuuc-v27.so
 lib/libminikin.so:vendor/lib/libminikin-v27.so
 lib/libskia.so:vendor/lib/libskia.so
 lib64/libsoftkeymaster.so:vendor/lib64/libsoftkeymaster.so
+
+# Prebuilt camera blobs
+lib64/android.hardware.camera.device@3.4.so
+lib64/libcamera_metadata.so
+lib64/libcameraservice.so
+lib64/android.hardware.camera.device@3.3.so
+lib64/libcamera_client.so
+lib64/android.hardware.camera.device@1.0.so
+lib64/libcamera2ndk.so
+lib64/android.hardware.camera.common@1.0.so
+lib64/android.hardware.camera.provider@2.4.so
+lib64/android.hardware.camera.device@3.2.so
+lib/android.hardware.camera.device@3.4.so
+lib/libcamera_metadata.so
+lib/libcameraservice.so
+lib/android.hardware.camera.device@3.3.so
+lib/libcamera_client.so
+lib/android.hardware.camera.device@1.0.so
+lib/libcamera2ndk.so
+lib/android.hardware.camera.common@1.0.so
+lib/android.hardware.camera.provider@2.4.so
+lib/android.hardware.camera.device@3.2.so
