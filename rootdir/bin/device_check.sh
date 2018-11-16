@@ -14,10 +14,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-if grep -q NFC /dev/block/platform/soc/c0c4000.sdhci/by-name/version; then
-    echo "Device supports NFC"
-else
-    echo "Device doesn't support NFC , removing ..."
+
+if ! grep NFC /dev/block/platform/soc/c0c4000.sdhci/by-name/version
+	then
     # Remove NFC
     rm -rf /system/app/*Nfc*
     rm -rf /system/etc/permissions/*nfc*
@@ -36,5 +35,7 @@ else
     rm -rf /vendor/lib/hw/*nfc*
     rm -rf /vendor/lib64/*nfc*
     rm -rf /vendor/lib64/hw/*nfc*
+    return 1
+else
+    return 0
 fi
-
