@@ -42,7 +42,7 @@ import java.util.Arrays;
 public class TouchscreenGestures {
 
     private static final String GESTURE_PATH =
-            "/sys/kernel/touchpanel/gesture_node";
+            "/proc/tpd_gesture";
 
     private static final String PROP_GESTURE_TYPE =
             "persist.asus.gesture.type";
@@ -59,13 +59,13 @@ public class TouchscreenGestures {
 
     // Id, name, keycode
     private static final TouchscreenGesture[] TOUCHSCREEN_GESTURES = {
-        new TouchscreenGesture(0, "Letter C", 249),
-        new TouchscreenGesture(1, "Letter e", 250),
-        new TouchscreenGesture(2, "Letter S", 251),
-        new TouchscreenGesture(3, "Letter V", 252),
-        new TouchscreenGesture(4, "Letter W", 253),
-        new TouchscreenGesture(5, "Letter Z", 254),
-        new TouchscreenGesture(6, "Swipe Up", 248),
+        new TouchscreenGesture(0, "Letter C", 0x2f0),
+        new TouchscreenGesture(1, "Letter e", 0x2ed),
+        new TouchscreenGesture(2, "Letter S", 0x2ee),
+        new TouchscreenGesture(3, "Letter V", 0x2f1),
+        new TouchscreenGesture(4, "Letter W", 0x2ec),
+        new TouchscreenGesture(5, "Letter Z", 0x2ef),
+        new TouchscreenGesture(6, "Swipe Up", 0x2f6),
     };
 
     public static final int[] ALL_GESTURE_MASKS = {
