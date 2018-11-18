@@ -150,7 +150,9 @@ on boot
 #Huaqin add for sensors permission-ZQL1650-141 by chenyijun5 at 2018/2/1 end
 
 #Huaqin add for TT1185847 by lingyuguo at 2018/05/16 start
+    chown system system /proc/double_tap
     chown system system /proc/tpd_gesture
+    chmod 0644 /proc/double_tap
     chmod 0644 /proc/tpd_gesture
 #Huaqin add for TT1185847 by lingyuguo at 2018/05/16 end
 
