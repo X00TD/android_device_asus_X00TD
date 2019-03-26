@@ -73,6 +73,9 @@
         <AppAttributes
             PackageName="com.kiloo.subwaysurf"
             ActivityType="1" />
+      <AppAttributes
+            PackageName="com.pubg.krmobile"
+            ActivityType="1" />
     </GamedROGameList>
 
     <GamedRWAppList>
